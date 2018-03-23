@@ -29,7 +29,7 @@ const one = ['Hello'],
 
 	// (4)
 const hello = 'Hello';
-//console.log(`${hello} ${'World'}`)
+//console.log(`${hello} World`)
 
 	// (5)
 const hello1 = 'Hello';
@@ -37,7 +37,8 @@ const world1 = 'World';
 //console.log(`${hello1} ${world1}`)
 
 	// (6)
-//sayHello = (str1 = 'Hello', str2 = 'World') => console.log(`${str1},${str2}`);
+const sayHello = (str1 = 'Hello', str2 = 'World') => console.log(`${str1},${str2}`);
+//sayHello('man','woman');
 
 	// zadanie 2
 // Stwórz funkcję multiply, która ma zwracać wynik działania operacji mnożenia dwóch wartości a i b. Przykładowo:
@@ -60,7 +61,8 @@ function multiply1() {
 
 //const aa = (prompt('a')) || 1;
 //const bb = (prompt('b')) || 1;
-let result = cc => cc = aa * bb;
+//const result = (aa,bb) => {return aa * bb};
+//const cc = result(aa,bb);
 //console.log(cc);
 
 // zadanie 3
@@ -80,7 +82,7 @@ const myAverage = (...boxes) => {
 }
 
 // myAverage(1) // 1
-// myAverage(1, 3) // 2
+//myAverage(1, 3) // 2
 // myAverage(1, 3, 6, 10) // 5
 
 // zadanie 4
@@ -89,7 +91,7 @@ const myAverage = (...boxes) => {
 	// (1)
 	// to zadanie nie działa
 const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
-// console.log(averageFunction(...grades));
+//myAverage(...grades);
 
 // zadanie 5
 // Podczas pracy nad projektem natknąłeś się na bardzo dziwną strukturę danych - [1, 4,'Iwona', false, 'Nowak']. Twoim zadaniem jest skorzystanie z destrukturyzacji w celu wyciągnięcia z tablicy zmiennych firstname oraz lastname.
